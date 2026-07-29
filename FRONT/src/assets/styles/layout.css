@@ -1,0 +1,50 @@
+
+/* 讓頁尾自動吸附在最底部的經典 Flex 佈局 (Sticky Footer) */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 確保至少跟螢幕一樣高 */
+}
+
+.app-main {
+  flex: 1; /* 自動填滿剩餘空間，把 Footer 推到最底下 */
+  padding: 2px;
+}
+
+.app-header, 
+.app-footer {
+  background-color: #ddffe0;
+  padding: 10px;
+  text-align: center;
+}
+
+.app-footer {
+  border-top: 0px;
+  font-size: 14px;
+}
+
+.nav-link {
+  margin: 0 10px;
+  color: #42b983;
+  text-decoration: none;
+  font-weight: bold;
+}
+.main-container {
+  padding: 30px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #42b983;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3aa876;
+}
