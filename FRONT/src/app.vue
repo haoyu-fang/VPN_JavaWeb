@@ -2,11 +2,12 @@
   <div class="main-container">
     <header class="app-header">
     <nav>
-    <router-link v-if="$router.path !== '/'" to="/">Home</router-link>
-    <router-link v-else to="/exam">exam</router-link>
+    <router-link v-if="$route.path !== '/'" to="/">Home</router-link>
+    <router-link v-else to="/exam">Exam</router-link>
     </nav>
     </header>
     <main class="app-main">
+      <div></div>
      <router-view />
     </main>
     <footer class="app-footer">

@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div class="Exam-container">
     <h1>🎉 我的第2個 Vue 3 應用程式！</h1>
     <p>目前的點擊次數：{{ count }}</p>
     <button @click="increment">點我加 1</button>

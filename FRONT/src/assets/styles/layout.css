@@ -1,3 +1,8 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* 讓頁尾自動吸附在最底部的經典 Flex 佈局 (Sticky Footer) */
 .app-container {
@@ -8,7 +13,6 @@
 
 .app-main {
   flex: 1; /* 自動填滿剩餘空間，把 Footer 推到最底下 */
-  padding: 2px;
 }
 
 .app-header, 
