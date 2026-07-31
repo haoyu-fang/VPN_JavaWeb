@@ -18,9 +18,8 @@ const count = ref(0)
 function increment() {
   count.value++
 }
-
 </script>
 
 <style scoped>
-@import '../assets/styles/layout.css';
+@import '../assets/styles/Default_Layout.css';
 </style>

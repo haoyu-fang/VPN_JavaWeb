@@ -1,9 +1,13 @@
-html,body{
+html, body, #WebAndApp, #app{
   height: 100%;
   margin: 0;
   padding: 0;
 }
-
+.app-main {
+  min-height: 100vh;
+  text-align: center;
+  font-family: sans-serif;
+}
 /* 讓頁尾自動吸附在最底部的經典 Flex 佈局 (Sticky Footer) */
 .app-container {
   display: flex;
@@ -15,16 +19,10 @@ html,body{
   flex: 1; /* 自動填滿剩餘空間，把 Footer 推到最底下 */
 }
 
-.app-header, 
-.app-footer {
+.app-header{
   background-color: #ddffe0;
   padding: 10px;
   text-align: center;
-}
-
-.app-footer {
-  border-top: 0px;
-  font-size: 14px;
 }
 
 .nav-link {
