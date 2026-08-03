@@ -1,18 +1,15 @@
 <style scoped>
- @import '@/assets/styles/login.css';
+ @import '@/assets/styles/login_layout.css';
 </style>
 
 <template>
-    <header class="main-header">
-        <nav>
-            <router-link v-if="$route.path !== '/'" to="/">Home</router-link>
-            <router-link v-else to="/exam">Exam</router-link>
-        </nav>
-    </header>
-    <main class="app-main">
-        <router-view />
+    <header></header>
+    <main class="log-main-container">
+        <div class = "card">
+            <div class="card_inner">
+                
+            </div>
+        </div>
     </main>
-    <footer class="app-footer">
-        <p>© All are practices</p>
-    </footer>
+    <footer class="app-footer"></footer>
 </template>

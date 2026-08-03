@@ -2,10 +2,9 @@
     <div class="main-cotainer">
         
         <main class="main-content">
-            <div> 
+            <div class> 
                 
             </div>
         </main>
-        <div>  abc </div>
     </div>
 </template>
