@@ -1,8 +1,3 @@
-html, body, #WebAndApp, #app{
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 .app-main {
   min-height: 100vh;
   text-align: center;

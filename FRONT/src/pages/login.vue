@@ -1,10 +1,13 @@
+<script setup>
+import page from'@/layout/LogAndReg.vue'
+</script>
 <template>
-    <div class="main-cotainer">
-        
+    <div>
         <main class="main-content">
-            <div class> 
-                
-            </div>
+            <page />
         </main>
     </div>
 </template>
+<style scoped>
+ @import '@/assets/styles/login_layout.css';
+</style>

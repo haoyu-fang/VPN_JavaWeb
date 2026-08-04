@@ -3,7 +3,7 @@ import pagefooter from './components/footer.vue'
 </script>
 
 <template>
-<div class="main-container">
+<div class="main">
     <header class="app-header">
       <nav>
             <router-link v-if="$route.path !== '/'" to="/">Home</router-link>
