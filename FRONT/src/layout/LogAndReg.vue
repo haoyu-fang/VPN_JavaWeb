@@ -31,6 +31,22 @@
 
 <script setup>
 import {ref, reactive} from 'vue'
+
+const Data =reactive({
+    account:'',
+    password:''
+})
+
+const isloading = ref(false)
+const submit = async()=>{
+    if(Data.account==='' || Data.password===''){
+        alert('請輸入帳號密碼')
+        return
+    }else if(!Data.account || !Data.password){
+        alert('帳號密碼錯誤')
+        return
+    }
+}
 </script>
 
 
