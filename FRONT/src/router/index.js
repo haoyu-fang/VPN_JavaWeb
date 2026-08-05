@@ -29,11 +29,6 @@ const router = createRouter({
           path: '', // 當網址是 /login/register 時
           name: 'login',
           component:() => import('@/pages/login.vue'), // 顯示 register.vue 組件
-        },
-        {
-          path: 'register', // 當網址是 /login/register 時
-          name: 'register',
-          component: () => import('@/pages/register.vue'), // 顯示 register.vue 組件
         }
        ]
     }

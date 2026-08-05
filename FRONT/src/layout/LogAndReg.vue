@@ -1,6 +1,24 @@
-<style scoped>
- @import '@/assets/styles/login_layout.css';
-</style>
+<script setup>
+import {ref, reactive} from 'vue'
+import regModal from './components/regModel.vue'
+const showModal = ref(false);
+
+const Data =reactive({
+    account:'',
+    password:''
+})
+
+const isloading = ref(false)
+const submit = async()=>{
+    if(Data.account==='' || Data.password===''){
+        alert('請輸入帳號密碼')
+        return
+    }else if(!Data.account || !Data.password){
+        alert('帳號密碼錯誤')
+        return
+    }
+}
+</script>
 
 <template>
     <header></header>
@@ -23,30 +41,21 @@
                     adva
                 </div>
             </div>
-
+            <div class="btn_inner">
+                <button class="r_btn" @click="showModal = true">加入會員</button>
+                <button class="l_btn" @click="issuccess">登入</button>
+            </div>
         </div>
     </main>
+    <regModal :is-open="showModal" 
+    @close="showModal=false"
+    @success="showModal=false"
+    />
+
     <footer class="app-footer"></footer>
 </template>
 
-<script setup>
-import {ref, reactive} from 'vue'
+<style scoped>
+ @import '@/assets/styles/login_layout.css';
 
-const Data =reactive({
-    account:'',
-    password:''
-})
-
-const isloading = ref(false)
-const submit = async()=>{
-    if(Data.account==='' || Data.password===''){
-        alert('請輸入帳號密碼')
-        return
-    }else if(!Data.account || !Data.password){
-        alert('帳號密碼錯誤')
-        return
-    }
-}
-</script>
-
-
+</style>
