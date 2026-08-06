@@ -1,7 +1,6 @@
 .app-main {
   min-height: 100vh;
   text-align: center;
-  font-family: sans-serif;
 }
 /* 讓頁尾自動吸附在最底部的經典 Flex 佈局 (Sticky Footer) */
 .app-container {
@@ -29,7 +28,6 @@
 .main-container {
   padding: 30px;
   text-align: center;
-  font-family: sans-serif;
 }
 
 button {

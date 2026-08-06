@@ -28,30 +28,31 @@
 .insertcard{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
     margin-bottom: 1.2rem;
 }
 
 .insertcard input{
     padding:10px 14px;
-    border:1px solid #d1d5db;
+    border:0px solid #d1d5db;
     border-radius: 4px;
     outline:none;
 }
 
 .btncard{
+    justify-content: center;
+    align-items: center;
  margin-top: 1.5rem;
 }
 
 .submitbtn{
-    width: 100%;
+    width: 30%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     line-height: 1rem;
     padding: 12px;
     background-color: #9dec9a;
-    color: white;
+    color: rgb(2, 1, 1);
     border-radius: 8px;
     cursor: pointer;
 }

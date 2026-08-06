@@ -10,13 +10,14 @@ const Data =reactive({
 
 const isloading = ref(false);
 const submit = async()=>{
-    if(Data.email==='' || Data.password===''){
-        alert('請輸入帳號密碼')
-        return
-    }else if(!Data.email || !Data.password){
-        alert('帳號密碼錯誤')
-        return
-    }
+    alert(Data.email+" "+Data.password)
+    // if(Data.email==='' || Data.password===''){
+    //     alert('請輸入帳號密碼')
+    //     return
+    // }else if(!Data.email || !Data.password){
+    //     alert('帳號密碼錯誤')
+    //     return
+    // }
 }
 </script>
 
@@ -30,7 +31,7 @@ const submit = async()=>{
                     帳號
                 </div>
                 <div class="right_card">
-                    adva
+                    <input v-model="Data.email" type="email" required placeHolder="請輸入帳號">
                 </div>
             </div>
             <div class="card_inner"> 
@@ -38,12 +39,12 @@ const submit = async()=>{
                     密碼
                 </div>
                 <div class="right_card">
-                    adva
+                    <input v-model="Data.password" type="password" required placeHolder="請輸入密碼">
                 </div>
             </div>
             <div class="btn_inner">
                 <button class="r_btn" @click="showRegModal = true">加入會員</button>
-                <button class="l_btn">登入</button>
+                <button class="l_btn" @click="submit">登入</button>
             </div>
         </div>
     </main>

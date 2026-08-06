@@ -57,10 +57,17 @@
 }
 .right_Card{
     flex: 2;
-    font-family: 'Noto Sans TC', sans-serif; 
+    display: flex;
     font-weight: 400; 
     line-height: 1.7;
 }
+.right_Card input{
+    flex: 1;
+    background-color: #9dec9a;
+    border-color: #9dec9a;
+    border-style: solid;
+}
+
 .btn_inner{
     display: flex;
     gap: 1.5rem;
