@@ -1,19 +1,19 @@
 <script setup>
 import {ref, reactive} from 'vue'
-import regModal from './components/regModel.vue'
-const showModal = ref(false);
+import regModal from '@/layout/components/regModal.vue'
+const showRegModal = ref(false);
 
 const Data =reactive({
-    account:'',
+    email:'',
     password:''
 })
 
-const isloading = ref(false)
+const isloading = ref(false);
 const submit = async()=>{
-    if(Data.account==='' || Data.password===''){
+    if(Data.email==='' || Data.password===''){
         alert('請輸入帳號密碼')
         return
-    }else if(!Data.account || !Data.password){
+    }else if(!Data.email || !Data.password){
         alert('帳號密碼錯誤')
         return
     }
@@ -42,14 +42,14 @@ const submit = async()=>{
                 </div>
             </div>
             <div class="btn_inner">
-                <button class="r_btn" @click="showModal = true">加入會員</button>
-                <button class="l_btn" @click="issuccess">登入</button>
+                <button class="r_btn" @click="showRegModal = true">加入會員</button>
+                <button class="l_btn">登入</button>
             </div>
         </div>
     </main>
-    <regModal :is-open="showModal" 
-    @close="showModal=false"
-    @success="showModal=false"
+    <regModal :is-open="showRegModal" 
+    @close="showRegModal=false"
+    @success="showRegModal=false"
     />
 
     <footer class="app-footer"></footer>
