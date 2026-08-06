@@ -1,5 +1,5 @@
 <script setup>
-import page from'@/layout/LogAndReg.vue'
+import page from'@/layout/Login.vue'
 </script>
 <template>
     <div>

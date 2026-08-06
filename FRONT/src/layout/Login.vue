@@ -57,6 +57,6 @@ const submit = async()=>{
 </template>
 
 <style scoped>
- @import '@/assets/styles/login_layout.css';
+ @import '@/assets/styles/login.css';
 
 </style>

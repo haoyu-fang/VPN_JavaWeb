@@ -7,28 +7,27 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4f6f9;
+    background-color: #f2d7b4c3;
     padding: 1.5rem;
     box-sizing: border-box;
 }
 .title_font{
-    font-family: 'TASA Explorer', 'Inter', sans-serif; 
-    font-weight: 800; 
-    letter-spacing: -0.02em; 
+    color: #fdaf07be;
+    font-weight: 1200; 
+    letter-spacing: 0.5rem; 
 }
 .context_font{
-    font-family: 'Noto Sans TC', sans-serif; 
     font-weight: 400; 
     line-height: 1.7;
 }
 
 .card{
-    max-width: 510px;
+    max-width: 450px;
     width: 100%;
     text-align:center;
-    background-color: #dda4a4;
+    background-color: #FAF7F2;
     border-radius: 16px;
-    box-shadow: 0px 10px 30px rgba(249, 144, 144, 0.08);
+    box-shadow: 5px 10px 30px rgba(119, 80, 80, 0.08);
     padding: 1.5rem;
     box-sizing :border-box;
 }
@@ -37,7 +36,7 @@
     display: flex;
     gap: 1.5rem;
     align-items: center;
-    background-color: #9dec9a;
+    background-color: #FAF7F2;
     padding: 10px;
     border-radius: 8px;
     margin: 1rem;
@@ -45,35 +44,43 @@
 
 .left_Card{
     flex: 1;
+    letter-spacing: 10px;
     align-items: center;
     justify-content: center;
-    border-right: 1px solid #e3ce45;
-    padding-right: 1rem;
+    border-right: 2px solid #D8C3A5;
+    padding-right: 0.5rem;
     font-family: "Chiron GoRound TC", sans-serif;
     line-height: 1.7;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    font-style: #FAF7F2;
+    font-style:normal;
 }
 .right_Card{
-    flex: 2;
+    flex: 2.5;
     display: flex;
     font-weight: 400; 
     line-height: 1.7;
 }
 .right_Card input{
     flex: 1;
-    background-color: #9dec9a;
-    border-color: #9dec9a;
-    border-style: solid;
+    background-color: #FAF7F2;
+    padding:0%;
+    border: 2px dashed;
+    border-width:0 0 2 0;
+    border-color: #D8C3A5;
 }
+.right_Card input:focus{
+    outline:none;
+}
+
 
 .btn_inner{
     display: flex;
     gap: 1.5rem;
     align-items: center;
     justify-content: center;
-    background-color: #f1f1f126;
+    background-color: #FAF7F2;
     padding: 10px;
     border-radius: 8px;
     margin: 1rem;
@@ -82,7 +89,7 @@
 
 .r_btn,.l_btn{
     display: flex;
-    background-color: #636260;
+    background-color: #D8C3A5;
     color: #fff;
     border: none;
     padding: 10px 20px;

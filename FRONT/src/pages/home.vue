@@ -1,7 +1,7 @@
 <template>
   <Header></Header>
   <div class="Home-container">
-    <h1>🎉 我的第一個 Vue 3 應用程式！</h1>
+    <h1>🎉 Docker test！</h1>
     <p>目前的點擊次數：{{ count }}</p>
     <button @click="increment">點我加 1</button>
   </div>

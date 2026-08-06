@@ -1,3 +1,5 @@
 # Ignore node_modules folder
-./FRONT/node_modules/*
+/FRONT/node_modules/
 .DS_Store
+*.yml
+.package-lock.json
