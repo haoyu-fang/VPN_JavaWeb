@@ -1,15 +1,12 @@
 <script setup>
 import pagefooter from './components/footer.vue'
+import h from '@/layout/components/header.vue';
 </script>
 
 <template>
+
 <div class="main">
-    <header class="app-header">
-      <nav>
-            <router-link v-if="$route.path !== '/'" to="/">Home</router-link>
-            <router-link v-else to="/exam">Exam</router-link>
-        </nav>
-    </header>
+  <h/>
     <main class="app-main">
      <router-view />
     </main>

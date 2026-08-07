@@ -1,0 +1,32 @@
+.backbtn{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 990;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    
+    background-color: #ef9622;
+    color: #ffffff;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backbtn:hover{
+    background-color: #fab43d;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.22);
+}
+
+.backbtn:active{
+ transform: translateY(-1px) scale(0.98);
+}

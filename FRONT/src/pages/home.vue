@@ -1,5 +1,4 @@
 <template>
-  <Header></Header>
   <div class="Home-container">
     <h1>🎉 Docker test！</h1>
     <p>目前的點擊次數：{{ count }}</p>
@@ -22,5 +21,5 @@ function increment() {
 
 
 <style scoped>
-@import '../assets/styles/Default_Layout.css';
+@import '@/assets/styles/Default_Layout.css';
 </style>

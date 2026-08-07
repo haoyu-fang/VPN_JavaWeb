@@ -1,8 +1,9 @@
 .app-footer {
-    Height: 5%;
+    Height: 5vh;
     background-color: #ddffe0;
-    padding: 10px;
     text-align: center;
+    padding: 0px;
+    margin: 0px;
     border-top: 0px;
     font-size: 14px;
 }
