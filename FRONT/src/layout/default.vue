@@ -14,5 +14,5 @@ import h from '@/layout/components/header.vue';
   </div>
 </template>
 <style scoped>
- @import '@/assets/styles/Default_Layout.css';
+ @import '@/assets/styles/Default.css';
 </style>

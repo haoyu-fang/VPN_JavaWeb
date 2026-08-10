@@ -19,7 +19,3 @@ function increment() {
 }
 </script>
 
-
-<style scoped>
-@import '@/assets/styles/Default_Layout.css';
-</style>
