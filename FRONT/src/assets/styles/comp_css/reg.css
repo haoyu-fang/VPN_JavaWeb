@@ -1,10 +1,10 @@
 .modal-card{
     position: relative;
-    background-color: #ffffff;
+    background-color: #f2d7b4;
     width: 90%;
     max-width: 420px;
     padding:2.5rem 2rem;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
@@ -12,7 +12,7 @@
     position: absolute;
     top: 1rem;
     right: 1.2rem;
-    background-color: none;
+    background-color: #f2d7b4;
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
@@ -32,8 +32,10 @@
 }
 
 .insertcard input{
+    background-color: #f2d7b4;
     padding:10px 14px;
-    border:0px solid #d1d5db;
+    border: 2px dashed;
+    border-width: 0px 0px 2px 0px;
     border-radius: 4px;
     outline:none;
 }

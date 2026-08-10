@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import default_p from '@/layout/default.vue'
-import acount_p from '@/layout/LogAndReg.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -22,15 +21,9 @@ const router = createRouter({
       ]
     },
     {
-       path: '/login', // 當網址是 /login 時
-       component: acount_p, // 顯示 login.vue 組件
-       children: [
-        {
-          path: '', // 當網址是 /login/register 時
-          name: 'login',
-          component:() => import('@/pages/login.vue'), // 顯示 register.vue 組件
-        }
-       ]
+      path: '/login', 
+      name: 'login',
+      component:() => import('@/pages/login.vue')
     }
   ]
 })

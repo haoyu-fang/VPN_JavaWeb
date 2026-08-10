@@ -1,5 +1,5 @@
 .app-main {
-  min-height: 100vh;
+  min-height: 95vh;
   text-align: center;
 }
 /* 讓頁尾自動吸附在最底部的經典 Flex 佈局 (Sticky Footer) */
@@ -11,12 +11,6 @@
 
 .app-main {
   flex: 1; /* 自動填滿剩餘空間，把 Footer 推到最底下 */
-}
-
-.app-header{
-  background-color: #ddffe0;
-  padding: 10px;
-  text-align: center;
 }
 
 .nav-link {
