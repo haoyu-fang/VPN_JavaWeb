@@ -18,11 +18,13 @@ const goexam = () =>{
 
 <template>
     <header class="homeheader">
-        <div class="btngroup">
-        <button class="changebtn" v-if="ishome" @click ="goexam">Exam</button>
-        <button class="changebtn" v-else @click ="gohome">Home</button>
-        <button class="changebtn" @click="login">login</button>
-        </div>
+            <div class="Bigtitle">Avc
+            </div>
+            <div class="btngroup">
+                <button class="changebtn" v-if="ishome" @click ="goexam">Exam</button>
+                <button class="changebtn" v-else @click ="gohome">Home</button>
+                <button class="changebtn" @click="login">login</button>
+            </div>
     </header>
 </template>
 
