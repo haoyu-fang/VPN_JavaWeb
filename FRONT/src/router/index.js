@@ -1,22 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import default_p from '@/layout/default.vue'
+import articles from '@/pages/articles.vue'
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/',          // 當網址是 / 時
+      path: '/', 
       component: default_p , // 顯示 HomeView.vue 組件
       children: [
         {
-          path: '', // 當網址是 /exam 時
+          path: '',
           name: 'home',
          component: () => import('@/pages/home.vue') // 顯示 exam.vue 組件,
         },
         {
-          path: 'exam', // 當網址是 /exam 時
-          name: 'exam',
-         component: () => import('@/pages/exam.vue') // 顯示 exam.vue 組件,
+          path: 'articles/:slug',
+          name: 'articles',
+         component: articles // 顯示 exam.vue 組件,
         }
       ]
     },

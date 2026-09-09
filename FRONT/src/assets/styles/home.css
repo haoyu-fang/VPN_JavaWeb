@@ -1,0 +1,76 @@
+.bento-main{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding:0 24px;
+    position: relative;
+}
+.bento-main::before{
+    content:"";
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle,rgba(212, 163, 115, 0.18)0%, transparent 70%);
+    filter: blur(60px);
+    pointer-events:none;
+}
+.col-span-2{
+    grid-column: span 2;
+}
+.bento-card{
+    border-radius: 24px;
+    padding:32px;
+    box-sizing: border-box;
+    transition: all 0.3 cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+}
+.wood-card{
+    background-color: linear-gradient(145deg,#261f18 0%,#171310 100%);
+    border:1px solid rgba(212, 163, 115, 0.3);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+.wood-card p{
+    color: #A89F91;
+}
+
+.glass-card{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stat-num{
+    font-size: 42px;
+    font-weight: 800;
+    background: linear-gradient(135deg,#ffffff 0%,  #e6B88A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stat-label{
+    color: #d1d5db;
+    margin-top:8px;
+}
+
+.bento-card:hover{
+    transform:translateY(3px);
+    border-color:rgba(230, 184, 138, 0.6);
+    box-shadow: 0 12px 30px rbga(212,163,115,0.15);
+}
+
+.card-badge{
+    display: inline-block;
+    padding:4px 12px;
+    background: rgba(212, 163,115,0.15);
+    color:#e6B88A;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}

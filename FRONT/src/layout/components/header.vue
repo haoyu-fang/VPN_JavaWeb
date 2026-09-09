@@ -10,8 +10,8 @@ const login = () =>{
 const gohome = () =>{
     r.push({name: 'home'});
 }
-const goexam = () =>{
-    r.push({name: 'exam'});
+const gotoarticle = (articletitle) =>{
+    r.push({name: 'articles',params: {slug: articletitle }});
 }
 
 </script>
@@ -21,7 +21,7 @@ const goexam = () =>{
             <div class="Bigtitle">Avc
             </div>
             <div class="btngroup">
-                <button class="changebtn" v-if="ishome" @click ="goexam">Exam</button>
+                <button class="changebtn" v-if="ishome" @click ="gotoarticle('vpn')">Exam</button>
                 <button class="changebtn" v-else @click ="gohome">Home</button>
                 <button class="changebtn" @click="login">login</button>
             </div>
