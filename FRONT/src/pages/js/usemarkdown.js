@@ -18,18 +18,17 @@ const parsemarkdown = (content) =>{
 
 
 export function useMarkdown() {
-    const route = useRoute();
     const renderedHtml = ref('');
     const notFound = ref(false);
     const loading = ref(false);
 
     watchEffect(async () => {
-       const slug = route.params.slug;
+       const slug = route.params.slug || 'vpn';
        notFound.value = false;
        loading.value = true;
 
        try {
-        const res = await fetch('@/pages/articles/' + slug + '.md');
+        const res = await fetch('/articles/${slug}.md');
         if(!res.ok)throw new Error('Not Found');
         const mdText = await res.text();
         const rawHtml = marked.parse(mdText);
