@@ -3,10 +3,6 @@ import { ref, watchEffect } from 'vue';
 import { useRoute } from 'vue-router';
 import { marked } from 'marked';
 
-const route = useRoute();
-const renderedHtml = ref('');
-const notFound = ref(false);
-
 const parsemarkdown = (content) =>{
     if(!content) return '';
     return content
@@ -16,30 +12,29 @@ const parsemarkdown = (content) =>{
     .replace(/<\/p>\s*<\/blockquote>/g, '</p></div>')
 }
 
-
-export function useMarkdown() {
-    const renderedHtml = ref('');
+export function usemd() {
+    const route = useRoute();
+    const renderedmd = ref('');
     const notFound = ref(false);
     const loading = ref(false);
 
     watchEffect(async () => {
-       const slug = route.params.slug || 'vpn';
+       const slug = route.params.slug || 'home';
        notFound.value = false;
        loading.value = true;
 
        try {
-        const res = await fetch('/articles/${slug}.md');
+        const res = await fetch(`/articles/${slug}.md`);
         if(!res.ok)throw new Error('Not Found');
         const mdText = await res.text();
-        const rawHtml = marked.parse(mdText);
-        renderedHtml.value = parsemarkdown(rawHtml);
+        const rawmd = marked.parse(mdText);
+        renderedmd.value = parsemarkdown(rawmd);
        } catch(err){
             console.error('文章載入失敗:',err);
            notFound.value = true;
        } finally {
            loading.value = false;
        }
-       return { renderedHtml, notFound, loading };
     });
-
+return { renderedmd, notFound, loading };
 }
