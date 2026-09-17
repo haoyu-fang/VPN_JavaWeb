@@ -21,7 +21,7 @@ const gotoarticle = (articletitle) =>{
             <div class="Bigtitle">Avc
             </div>
             <div class="btngroup">
-                <button class="changebtn" v-if="ishome" @click ="gotoarticle('vpn')">Exam</button>
+                <button class="changebtn" v-if="ishome" @click ="gotoarticle('home')">Exam</button>
                 <button class="changebtn" v-else @click ="gohome">Home</button>
                 <button class="changebtn" @click="login">login</button>
             </div>
