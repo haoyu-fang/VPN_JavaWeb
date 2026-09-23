@@ -7,7 +7,12 @@
 </template>
 
 <script setup>
+import { watch } from 'vue'
 import { usemd } from '@/pages/js/usemarkdown.js';
+import { setcopyblock } from '@/utils/copyblock.js';
 const { renderedmd, notFound, loading } = usemd();
 
+watch(renderedmd, () => {
+  setcopyblock('.copyblock');
+});
 </script>
