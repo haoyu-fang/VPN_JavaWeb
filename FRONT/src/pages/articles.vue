@@ -13,6 +13,10 @@ import { setcopyblock } from '@/utils/copyblock.js';
 const { renderedmd, notFound, loading } = usemd();
 
 watch(renderedmd, () => {
-  setcopyblock('.copyblock');
+  setcopyblock('.markdown-body');
 });
 </script>
+
+<style>
+@import '@/assets/styles/articles.css';
+</style>

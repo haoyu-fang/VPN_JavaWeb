@@ -4,12 +4,12 @@ import { useRoute } from 'vue-router';
 import { marked } from 'marked';
 
 const parsemarkdown = (content) =>{
-    if(!content) return '';
+    if(!content) return '內容未準備';
     return content
     .replace(/<blockquote>\s*<p>\[!NOTE\]/g, '<div class ="article article-note"><div class = "article-title">筆記</div><p>')
     .replace(/<blockquote>\s*<p>\[!TIP\]/g, '<div class ="article article-tip"><div class = "article-title">提示</div><p>')
     .replace(/<blockquote>\s*<p>\[!WARNING\]/g, '<div class ="article article-warning"><div class = "article-title">警告</div><p>')
-    .replace(/<blockquote>\s*<p>\`\`\`/g, '<div class = "copyblock"><div class = "copyblock-title">程式碼</div></div><p>')
+    .replace(/<copy>/g, '<div class = "copyblock"></div><p>')
     .replace(/<\/p>\s*<\/blockquote>/g, '</p></div>')
 }
 

@@ -1,0 +1,63 @@
+.markdown-body pre{
+    position: relative;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+
+    max-width: 100%;
+    width: fit-content;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin: 0 auto;
+    box-shadow: border-box 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.markdown-body .cpbtn{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+
+    padding: 4px 10px;
+    font-size: 12px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    z-index:10;
+}
+
+.markdown-body .cpbtn:hover{
+    background-color: rgba(255,255,255,0.25);
+    color:#fff;
+}
+
+.markdown-body .cpbtn.copied{
+    color: #4caf50;
+    border-color: #4caf50;
+}
+.markdown-body table{
+    margin: 1.5rem auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #e6B88A;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.markdown-body th,
+.markdown-body td{
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #e6B88A;
+    border-right: 1px solid #e6B88A;
+    color: #e6B88A;
+}
+.markdown-body tr:last-child td {
+    border-bottom: none;
+}
+
+.markdown-body th:last-child,
+.markdown-body td:last-child {
+    border-right: none;
+}
